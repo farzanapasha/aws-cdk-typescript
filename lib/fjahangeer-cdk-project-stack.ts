@@ -11,7 +11,7 @@ export class FjahangeerCdkProjectStack extends cdk.Stack {
 
 
    // 🔹 Create an Amazon S3 Bucket
-   const FjahBucket = new s3.Bucket(this, 'MyS3Bucket', {
+   const FjahBucket = new s3.Bucket(this, 'MyS3TestBucket', {
      versioned: true,
      removalPolicy: cdk.RemovalPolicy.DESTROY,
    });
