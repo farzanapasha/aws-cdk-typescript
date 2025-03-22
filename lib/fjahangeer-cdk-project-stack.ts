@@ -18,7 +18,7 @@ export class FjahangeerCdkProjectStack extends cdk.Stack {
 
 
    // 🔹 Create an AWS Lambda Function
-   const FjahLambda = new lambda.Function(this, 'MyS3Lambda', {
+   const FjahLambda = new lambda.Function(this, 'CdkS3Lambda', {
      runtime: lambda.Runtime.NODEJS_18_X,
      handler: 'index.handler',
      code: lambda.Code.fromInline(`
